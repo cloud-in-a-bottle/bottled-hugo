@@ -1,7 +1,7 @@
-# openhost-hugo
+# bottled-hugo
 
 [Hugo](https://gohugo.io/) — fast Go-based static-site generator —
-packaged for OpenHost with a live-rebuild loop. SSH into the host,
+packaged for Cloud in a Bottle with a live-rebuild loop. SSH into the host,
 edit your Markdown / templates / themes, and the site rebuilds within
 seconds.
 
@@ -15,7 +15,7 @@ seconds.
 - An `inotify` watcher inside the container rebuilds the site on
   every change to a source file. No `oh app reload`, no restart.
 - Built output served by darkhttpd (same engine as
-  `openhost-darkhttpd`).
+  `bottled-darkhttpd`).
 
 ## Authoring
 
@@ -104,9 +104,9 @@ box.
 ## When NOT to use this
 
 - You want a simpler "drop HTML and serve" workflow without a build
-  step → use `openhost-darkhttpd` instead.
+  step → use `bottled-darkhttpd` instead.
 - You want Python-based docs generation with auto-nav from a
-  `mkdocs.yml` → use `openhost-mkdocs` instead.
+  `mkdocs.yml` → use `bottled-mkdocs` instead.
 - You want server-side dynamic behaviour → Hugo is wrong tool.
 
 ## Limitations
